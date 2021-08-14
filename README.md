@@ -1,6 +1,4 @@
 # TimeCrunch
-<<<<<<< HEAD
-
 ## Description
 
 TimeCrunch is a full-stack web application that allows for one to easily schedule a Doctors appt. aswell as many other feautures.
