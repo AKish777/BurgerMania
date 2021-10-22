@@ -36,8 +36,23 @@ router.post('/signup', (req, res) => {
             status: "FAILED",
             message: "Password is too Short!"
         })
-    } else if {
+    } else {
+        User.find({email}).then(result => {
+            if (result.length) {
+                res.json({
+                    status: "FAILED",
+                    message: "A User with this Email already exists!"
+                })
+            } else {
 
+            }
+        }).catch(err => {
+            console.log(err);
+            res.json({
+                status: "FAILED",
+                message: "Error Ocurred while checking for existing user!"
+            })
+        })
     }
 })
 
