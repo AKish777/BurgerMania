@@ -1,13 +1,13 @@
+require('./config/db');
 
-
-const { application } = require('express');
-
-const express = require('express')();
+const app = require('express')();
 const port = 3000;
 
-const bodyParser = require('express').json;
-application.use(bodyParser());
+const UserRouter = require('./api/User');
 
-application.listen(port, () => {
+const bodyParser = require('express').json;
+app.use(bodyParser());
+
+app.listen(port, () => {
     console.log(`Server Running on Port ${port}`);
 })
