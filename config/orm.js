@@ -30,6 +30,15 @@ var orm ={
             if (err) throw err;
             cb(result);
         })
+    },
+    insert: function(table, cols, vals, cb){
+        connection.query(`INSERT INTO ${table} (${cols.toString()}) 
+                          VALUES (${printQuestionMarks(vals.length)})`, 
+                          vals, function(err, result){
+                                if(err) throw err;
+                                cb(result);
+        })
+    }
 }
 
 module.exports = orm;
