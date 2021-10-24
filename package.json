@@ -1,5 +1,5 @@
 {
-  "name": "eat-da-burger",
+  "name": "burgermania",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ald2424/eat-da-burger.git"
+    "url": "git+https://github.com/AKish777/BurgerMania.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ald2424/eat-da-burger/issues"
+    "url": "https://github.com/AKish777/BurgerMania/issues"
   },
-  "homepage": "https://github.com/ald2424/eat-da-burger#readme",
+  "homepage": "https://github.com/AKish777/BurgerMania#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
