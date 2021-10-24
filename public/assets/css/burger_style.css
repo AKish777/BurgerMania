@@ -1,2 +1,21 @@
 body{
     background-color: rgba(88, 137, 241, 0.74);
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    border: 5px solid rgb(205, 207, 71);
+}
+
+ul{
+    border: 5px solid rgb(240, 58, 58);
+    padding: 20px;
+}
+
+li{
+    padding: 4px;
+    list-style-type: none;
+}
