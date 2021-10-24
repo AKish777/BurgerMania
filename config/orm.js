@@ -38,6 +38,14 @@ var orm ={
                                 if(err) throw err;
                                 cb(result);
         })
+    },
+    update: function(table, objColVals, condition, cb){
+        connection.query("UPDATE " + table +
+                          " SET " + objToSql(objColVals) + " WHERE " + condition + ";",
+                          function(err, result){
+                            if(err) throw err;
+                            cb(result);
+      })
     }
 }
 
